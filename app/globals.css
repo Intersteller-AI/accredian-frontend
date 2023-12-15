@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'amalde-sans';
+    src: url('../public/fonts/AlmadenSans-Book-WebXL.woff2');
+}
+
+@font-face {
+    font-family: 'amalde-regular';
+    src: url('../public/fonts/AlmadenSans-Regular-WebXL.woff2');
+}
+
+@font-face {
+    font-family: 'happy';
+    src: url('../public/fonts/HappyDisplay-SemiBold.woff2');
+}
+
+@font-face {
+    font-family: 'icozoom';
+    src: url('../public/fonts/icozoom.0e52b290.woff');
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(212, 211, 211, 0.75);
+    opacity: 0.5;
+    border-radius: 1rem;
+    transition: all 0.2s;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: theme("colors.neutral.300");
+    opacity: 1;
+}
+
+/* * {
+    background: rgba(32, 178, 171, 0.162);
+} */
