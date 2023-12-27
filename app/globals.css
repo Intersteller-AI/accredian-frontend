@@ -22,6 +22,17 @@
     src: url('../public/fonts/icozoom.0e52b290.woff');
 }
 
+@font-face {
+    font-family: 'pattaya';
+    src: url('../public/fonts/Pattaya/Pattaya-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'saira';
+    src: url('../public/fonts/Saira/Saira-VariableFont_wdth\,wght.ttf');
+}
+
+
 
 .custom-scrollbar::-webkit-scrollbar {
     width: 0.4rem;
@@ -46,3 +57,139 @@
 /* * {
     background: rgba(32, 178, 171, 0.162);
 } */
+
+.social-links,
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.social-btn svg {
+    height: 24px;
+    width: 24px;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 0px;
+    color: transparent;
+}
+
+.social-btn:hover {
+    width: 230px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: 180px;
+    color: rgb(40, 40, 40);
+    font-weight: 700;
+    font-family: "saira";
+}
+
+#twitter svg {
+    fill: #1da1f2;
+}
+
+#linkedin svg {
+    fill: #0e76a8;
+}
+
+#github {
+    fill: #333;
+}
+/* -------------------------------------------------------------- */
+
+.wave-group {
+    position: relative;
+    font-family: "saira";
+}
+
+.wave-group .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.wave-group .input:focus {
+    outline: none;
+}
+
+.wave-group .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+
+.wave-group .label-char {
+    transition: 0.1s ease all;
+    transition-delay: calc(var(--index) * .02s);
+}
+
+.wave-group .input:focus~label .label-char,
+.wave-group .input:valid~label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #0E72ED;
+}
+
+.wave-group .bar {
+    position: relative;
+    display: block;
+    width: 400px;
+}
+
+.wave-group .bar:before,
+.wave-group .bar:after {
+    content: '';
+    height: 1.5px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #0E72ED;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.wave-group .bar:before {
+    left: 50%;
+}
+
+.wave-group .bar:after {
+    right: 50%;
+}
+
+.wave-group .input:focus~.bar:before,
+.wave-group .input:focus~.bar:after {
+    width: 50%;
+}
+

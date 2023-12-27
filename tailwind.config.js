@@ -11,6 +11,8 @@ module.exports = {
       amalde: ["amalde-regular"],
       happy: ["happy"],
       icozoom: ["icozoom"],
+      pattaya: ["pattaya"],
+      saira: ["saira"],
     },
     extend: {
       colors: {
