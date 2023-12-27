@@ -255,7 +255,7 @@ const page = () => {
       <div className="flex-1 hidden md:flex items-center justify-center bg-dullWhite relative">
         <HoverCard />
         <HoverCard2 />
-        <StatsCard />
+        {/* <StatsCard /> */}
       </div>
     </div>
   );

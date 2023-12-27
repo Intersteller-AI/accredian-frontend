@@ -21,6 +21,7 @@
   align-items: center;
   border-radius: 20px;
   transition: 700ms;
+  backdrop-filter: blur(10px);
   background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
 }
 
