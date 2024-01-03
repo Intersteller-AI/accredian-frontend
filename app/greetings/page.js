@@ -20,10 +20,10 @@ const page = () => {
           sx={{
             width: "100%",
             height: "100%",
-            backgroundColor: "transparent",
+            backgroundColor: "rgb(0, 0, 0, 0.4)",
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",
+            alignItems: "center",            
           }}
         >
           <div className="w-full max-w-4xl text-center text-white flex flex-col items-center px-4">
