@@ -14,7 +14,7 @@ const ClientProvider = ({ children }) => {
     <>
       <QueryClientProvider client={client}>
         <Provider store={store}>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Toaster />
         </Provider>
