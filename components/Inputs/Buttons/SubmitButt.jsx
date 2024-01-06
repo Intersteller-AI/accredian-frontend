@@ -1,17 +1,16 @@
 import React from 'react'
 import "./style.css"
+import { Box } from '@mui/material'
 
 
-const SubmitButt = ({ label }) => {
+const SubmitButt = ({ label, onClick }) => {
   return (
-    <div className='w-full max-w-[400px] mt-5'>
-      <button class="learn-more">
-        <span class="circle" aria-hidden="true">
-          <span class="icon arrow"></span>
-        </span>
-        <span class="button-text">{label}</span>
-      </button>
-    </div>
+    <Box className="learn-more" onClick={onClick}>
+      <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
+      </span>
+      <span className="button-text">{label}</span>
+    </Box>
   )
 }
 

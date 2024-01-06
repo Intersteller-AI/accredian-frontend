@@ -7,49 +7,103 @@ import { Sheet } from "@mui/joy";
 import "./styles.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Box, CardMedia, Typography } from "@mui/material";
+import { ThumbUp } from "@mui/icons-material";
 
 const page = () => {
   return (
-    <div className="main-bg w-full h-screen">
+    <Box
+      sx={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundImage:
+          "url(https://faculty.accredian.com/images/thank-you-background.webp)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top",
+      }}
+    >
       <Modal
         open={true}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Sheet
+        <Box
           sx={{
             width: "100%",
             height: "100%",
-            backgroundColor: "rgb(0, 0, 0, 0.4)",
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
             display: "flex",
             justifyContent: "center",
-            alignItems: "center",            
+            alignItems: "center",
           }}
         >
-          <div className="w-full max-w-4xl text-center text-white flex flex-col items-center px-4">
-            {/* <h1 className="text-5xl font-bold">accredian</h1>
-            <h4 className="text-xl">credencials that matter</h4> */}
-            <Image
-              className="max-w-[250px] w-full"
-              width={400}
-              height={400}
-              alt="logo"
-              src="https://faculty.accredian.com/images/accredian-logo.png"
+          <Box
+            sx={{
+              width: "100%",
+              maxWidth: "1000px",
+              textAlign: "center",
+              color: "white",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              px: 4,
+            }}
+          >
+            <CardMedia
+              component="img"
+              image="https://faculty.accredian.com/images/accredian-logo.png"
+              alt="Goole"
+              sx={{
+                maxWidth: "250px",
+                width: "100%",
+                objectFit: "unset",
+              }}
             />
-            <div className="w-full bg-white flex flex-col items-center text-black px-4 py-16 rounded-lg mt-12 drop-shadow-sm">
-              <FaThumbsUp className="text-5xl" />
-              <h1 className="text-3xl md:text-5xl font-bold mt-12">Your Data is saved!</h1>
-              <h4 className="text-lg md:text-xl font-bold mt-12">Thank You!</h4>
-            </div>
-            <div className="w-full flex gap-3 items-center justify-center mt-12">
-              <h1>Â©2023 Accredian</h1>
-              <span>|</span>
-              <Link href="/" className="hover:underline">accredian.com</Link>
-            </div>
-          </div>
-        </Sheet>
+            <Box
+              sx={{
+                width: "100%",
+                backgroundColor: "white",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                color: "black",
+                px: 2,
+                py: 8,
+                borderRadius: "8px",
+                mt: 8,
+                boxShadow: 1,
+              }}
+            >
+              <ThumbUp sx={{ fontSize: "3rem" }} />
+              <Typography variant="h3" sx={{ mt: 5, fontWeight: "bold" }}>
+                Your Data is saved!
+              </Typography>
+              <Typography variant="h4" sx={{ mt: 5, fontWeight: "bold" }}>
+                Thank You!
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                width: "100%",
+                display: "flex",
+                gap: 3,
+                alignItems: "center",
+                justifyContent: "center",
+                mt: 6,
+              }}
+            >
+              <Typography>©2023 Accredian</Typography>
+              <Typography>|</Typography>
+              <Link href="/">accredian.com</Link>
+            </Box>
+          </Box>
+        </Box>
       </Modal>
-    </div>
+    </Box>
   );
 };
 
