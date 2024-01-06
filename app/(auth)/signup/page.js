@@ -7,9 +7,9 @@ import gsap from "gsap";
 
 const SignInTwo = () => {
   const textArray = [
-    "Fostering Future Innovators in Data and Product Leadership",
-    "Nurturing Tomorrow's Visionaries in Data and Product Management",
-    "Empowering the Next Generation of Data and Product Trailblazers",
+    "Cultivating Trailblazing Talent for Future Data and Product Mastery",
+    "Shaping Tomorrow's Data and Product Pioneers through Mentorship",
+    "Crafting Visionary Leaders in Data and Product Strategy for the Future",
   ];
   const h1Ref = useRef(null);
   const indexRef = useRef(0);
@@ -68,9 +68,23 @@ const SignInTwo = () => {
 
   return (
     <div className="w-full lg:h-screen min-h-screen flex lg:flex-row flex-col font-saira px-4 md:px-6 md:py-8">
+      <div className="lg:flex-1 w-full h-[60vh] lg:h-full relative hidden md:flex">
+        <div className="flex-[0.5] lg:flex-[0.6] bg-grad-2" />
+        <div className="w-full absolute top-[10%] lg:top-[20%] left-[10%] max-w-[600px]">
+          <h4 className="text-2xl font-semibold">Our Vision</h4>
+          <h1
+            ref={h1Ref}
+            className="font-saira font-semibold text-3xl xl:text-4xl mt-4"
+          ></h1>
+        </div>
+        <div
+          className="w-[300px] lg:w-[450px] absolute bottom-[5%] right-[10%]"
+          ref={lottieRef}
+        ></div>
+      </div>
       <div className="flex-[0.8] h-full flex items-center justify-center">
         <div className="w-full flex flex-col items-center gap-2 max-w-[400px]">
-          <h1 className="text-3xl font-semibold">Sign up to you Account</h1>
+          <h1 className="text-3xl font-semibold">Create your new Account</h1>
           <div className="group mt-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,53 +123,27 @@ const SignInTwo = () => {
             </svg>
             <input className="input" type="password" placeholder="Password" />
           </div> */}
-          {/* <div className="w-full flex justify-end">
+          <div className="w-full flex justify-end">
             <h4 className="text-neutral-400 font-medium text-sm mt-4 hover:underline hover:text-[#4461F2] transition-all duration-150">
-              <Link href="/">Recover Password?</Link>
+              <Link href="/">Need help?</Link>
             </h4>
-          </div> */}
+          </div>
           <div className="w-full mt-4 flex justify-center items-center">
             <button className="anim-butt">
               <div className="svg-wrapper-1">
                 <div className="svg-wrapper">
                   <svg
-                    id="SvgjsSvg1001"
-                    width="30"
-                    height="30"
                     xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    svgjs="http://svgjs.com/svgjs"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
                   >
-                    <defs id="SvgjsDefs1002"></defs>
-                    <g id="SvgjsG1008">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 32 32"
-                        width="30"
-                        height="30"
-                      >
-                        <path
-                          fill="#fff"
-                          d="M16,4A12,12,0,1,0,28,16,12,12,0,0,0,16,4Zm1.83,14.12L15,21a1,1,0,0,1-.71.29,1,1,0,0,1-.7-1.7l2.82-2.83a1,1,0,0,0,0-1.42l-2.82-2.83A1,1,0,0,1,15,11.05l2.83,2.83A3,3,0,0,1,17.83,18.12Z"
-                          data-name="Layer 5"
-                          class="color5233ff svgShape"
-                        ></path>
-                      </svg>
-                    </g>
+                    <path
+                      fill="#fff"
+                      d="M7.168 21.002a3.428 3.428 0 0 1-3.416-3.42V6.418a3.416 3.416 0 0 1 5.124-2.958l9.664 5.581a3.416 3.416 0 0 1 0 5.916l-9.664 5.581a3.41 3.41 0 0 1-1.708.463Z"
+                      class="color6563ff svgShape"
+                    ></path>
                   </svg>
-                  {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                >
-                  <path fill="none" d="M0 0h24v24H0z"></path>
-                  <path
-                    fill="currentColor"
-                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                  ></path>
-                </svg> */}
                 </div>
               </div>
               <span className="font-semibold">Continue</span>
@@ -163,39 +151,26 @@ const SignInTwo = () => {
           </div>
           <div className="w-full mt-4 flex justify-end">
             <h3 className="font-medium text-neutral-400 text-sm">
-              Don't have an account?{" "}
-              <Link className="text-[#4461F2] hover:underline" href="/signup">
-                Sign up
+              Already have an account?{" "}
+              <Link className="text-[#4461F2] hover:underline" href="/signin">
+                Sign in
               </Link>
             </h3>
           </div>
-          {/* <div className="w-full mt-3">
+          <div className="w-full mt-3">
             <h4 className="text-neutral-400 text-sm font-medium">
               Learn more about Accredian's{" "}
               <Link href="/" className="text-[#4461F2]">
                 Privacy Policy
               </Link>{" "}
               and{" "}
+              <br />
               <Link href="/" className="text-[#4461F2] ">
                 Terms of Service.
               </Link>{" "}
             </h4>
-          </div> */}
+          </div>
         </div>
-      </div>
-      <div className="lg:flex-1 w-full h-[60vh] lg:h-full relative hidden md:flex">
-        <div className="flex-[0.5] lg:flex-[0.7] bg-grad" />
-        <div className="w-full absolute top-[10%] lg:top-[20%] left-[10%] max-w-[600px]">
-          <h4 className="text-2xl font-semibold">Our Vision</h4>
-          <h1
-            ref={h1Ref}
-            className="font-saira font-semibold text-3xl xl:text-4xl mt-4"
-          ></h1>
-        </div>
-        <div
-          className="w-[30vw] lg:w-[400px] absolute bottom-[15%] right-[15%]"
-          ref={lottieRef}
-        ></div>
       </div>
     </div>
   );

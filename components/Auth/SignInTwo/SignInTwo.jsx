@@ -44,7 +44,7 @@ const SignInTwo = () => {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        animationData: require("@/public/levitating.json"),
+        animationData: require("@/public/gaming.json"),
       });
 
       return () => animation.destroy();
@@ -69,7 +69,7 @@ const SignInTwo = () => {
           <h4 className="text-2xl font-semibold">Our Vision</h4>
           <h1 ref={h1Ref} className="font-saira font-semibold text-3xl xl:text-4xl mt-4"></h1>
         </div>
-        <div className="w-[30vw] lg:w-[400px] absolute bottom-[15%] right-[15%]" ref={lottieRef}></div>
+        <div className="w-[400px] lg:w-[500px] absolute bottom-[10%] right-[5%]" ref={lottieRef}></div>
       </div>
       <div className="flex-[0.8] h-full flex items-center justify-center">
         <div className='w-full flex flex-col items-center gap-2 max-w-[400px]'>

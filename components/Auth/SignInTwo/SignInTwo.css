@@ -104,5 +104,12 @@ input:hover {
 
 .bg-grad {
   background: rgb(68, 97, 242);
-  background: radial-gradient(circle, rgba(68, 97, 242, 0.338) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  background: radial-gradient(circle, #4461f256 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+.bg-grad-2 {
+  /* background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 0.5215336134453781) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%); */
+  background: rgb(165, 55, 255);
+  background: radial-gradient(circle, rgba(165, 55, 255, 0.13) 0%, rgba(238, 174, 202, 0.226) 23%, rgba(255, 255, 255, 1) 44%, rgba(255, 255, 255, 1) 74%, rgba(255, 255, 255, 1) 100%);
 }
